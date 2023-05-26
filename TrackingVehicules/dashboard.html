@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <style>
+          body {
+       margin: 0;
+       padding: 0;
+   }
+
+   nav {
+       background-color: #4CAF50;
+       height: 100%;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 200px;
+       overflow-x: hidden;
+       padding-top: 20px;
+   }
+
+   nav a {
+       display: block;
+       color: #fff;
+       padding: 15px;
+       text-decoration: none;
+   }
+
+   nav a:hover {
+       background-color: #555;
+   }
+
+   .content {
+       margin-left: 200px;
+       padding: 20px;
+   }
+
+
+   .dropdown {
+       position: relative;
+       display: inline-block;
+   }
+
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f1f1f1d7;
+       min-width: 160px;
+       z-index: 1;
+   }
+
+   .dropdown-content a {
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+   }
+
+   .dropdown-content a:hover {
+       background-color: #ddd;
+   }
+
+   .dropdown:hover .dropdown-content {
+       display: block;
+   }
+
+   .dropdown:hover .dropbtn {
+       background-color: #3e8e41;
+   }
+
+ 
+
+        .rect {
+        
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 60px;
+            padding: 10px;
+            text-align: center;
+        }
+        .rect:hover
+        {
+            width: 70%;
+            height:150px;
+            border-radius: 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .rect img {
+            height: 50px;
+            margin-bottom: 10px;
+            width: 50%;
+        }
+
+        .rect h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .rect span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        article {
+            width: 45%;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            border: 1px solid #ccc;
+        }
+
+        @media (max-width: 768px) {
+            article {
+                width: 100%;
+            }
+        }
+
+        
+       
+
+        .box {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: #64d56b15;
+            font-size: small;
+            color: #736c6c;
+        }
+
+        .add-box-btn {
+            display: block;
+            float: right;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .add-box-btn1 {
+            display: block;
+            float: right;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #c0c0c0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+
+        h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .uli {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .lii {
+            margin: 0 10px;
+        }
+
+        .aa {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        #tit:hover {
+            transform: scale(0);
+            color: rgb(172, 255, 19);
+        }
+
+        #tit {
+            transition: transform ease 2s, color ease 2s;
+            text-align: center;
+            color: black;
+        }
+
+        .aa:hover {
+            background-color: rgb(196, 196, 196);
+        }
+
+        img {
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav >
+        <a href="dashboard.html">Dashboard</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Vehicule's</a>
+            <div class="dropdown-content">
+                <a href="add.html">Add Vehicule</a>
+        
+            </div>
+        <a href="#">Driver's</a>
+        <a href="#">Booking's</a>
+        <a href="#">Customer</a>
+        <a href="#">Fuel</a>
+        <a href="#">Reminder</a>
+        <a href="#">Income & Expenses</a>
+        <a href="#">Tracking</a>
+        <a href="#">Geofence</a>
+        <a href="#">Reports</a>
+        <a href="#">Setting's</a>
+        <a href="#">User's</a>
+        <a href="#">Change password</a>
+    </nav>
+    <div class="content">
+        <h1>Dashboard</h1>
+        <table>
+            <tr>
+                <td><div class="rect">
+                    <img src="truck.png">
+                    <h2>Total vehicul's</h2>
+                    <span>3</span>
+                </div></td>
+            
+                <td><div class="rect">
+                    <img src="driver.png">
+                    <h2>Total drivers</h2>
+                    <span>2</span>
+                </div></td>
+            
+                <td><div class="rect">
+                    <img src="customer.png">
+                    <h2>Total customer</h2>
+                    <span>2</span>
+                </div></td>
+                <td><div class="rect">
+                    <img src="trip.png">
+                    <h2>Today trips</h2>
+                    <span>2</span>
+                </div></td>
+            </tr>
+       
+        
+       
+        
+        </table>
+        <div class="main-content">
+            <div style="display: flex; justify-content: space-between;">
+                <article>
+                    <h2>Reminder</h2>
+                    <hr size="1" color="grey">
+                    <div class="boxes">
+                        <div class="box">
+                            <h2>Need to check oil filter</h2>
+                        </div>
+                        <div class="box">
+                            <h2>Tyre replacement</h2>
+                        </div>
+                        <div class="box">
+                            <h2>Battery services</h2>
+                        </div>
+                    </div>
+                    <button class="add-box-btn">+ Add reminder</button>
+                    <script>
+                        const addBoxBtn = document.querySelector('.add-box-btn');
+                        const boxes = document.querySelector('.boxes');
+
+                        addBoxBtn.addEventListener('click', () => {
+                            const newBox = document.createElement('textarea');
+                            newBox.classList.add('box');
+                            newBox.placeholder = 'ADD REMINDER...';
+                            boxes.appendChild(newBox);
+                        });
+                    </script>
+                </article>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <article class="article">
+                    <h2>Véhicule Current Location</h2>
+                    <hr size="1" color="#CCCCCC">
+                    <table>
+                        <tr>
+                            <td><strong>Search:</strong></td>
+                            <td><input type="text" name="" id="" cols="30" rows="2"></input></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Name</strong></td>
+                            <td></td>
+                            <td><strong>Current Location</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr style="border: 0; height: 1px; background-color: gray;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tata Marco</td>
+                            <td></td>
+                            <td>
+                                <p><mark style="background-color: #FFC107; color: black;"><span>Location Not
+                                            Updated</mark></span></p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ford Tera</td>
+                            <td></td>
+                            <td>
+                                <p><mark style="background-color: #FFC107; color: black;"><span>Location Not
+                                            Updated</mark></span></p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Leyland Bulla</td>
+                            <td></td>
+                            <td>
+                                <p><mark style="background-color: #FFC107; color: black;"><span>Location Not
+                                            Updated</mark></span></p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button id="nextBtn" class="add-box-btn1">Next</button><button
+                                    class="add-box-btn">1</button><button id="previousBtn"
+                                    class="add-box-btn1">Previous</button>
+                                <script>
+                                    const previousBt = document.getElementById("previousBtn");
+                                    const nextBt = document.getElementById("nextBtn");
+
+                                    previousBt.addEventListener("click", () => {
+                                        window.history.back();
+                                    });
+
+                                    nextBt.addEventListener("click", () => {
+                                        window.history.forward();
+                                    });
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article class="article">
+                    <h2>Véhicule Running Status</h2>
+                    <hr size="1" color="#CCCCCC">
+                    <table>
+                       <tr>
+                            <td><strong>Search:</strong></td>
+                            <td><input type="text" name="" id="" cols="30" rows="2"></input></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Name</strong></td>
+                            <td></td>
+                            <td><strong>Status</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr style="border: 0; height: 1px; background-color: gray;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leyland Bulla</td>
+                            <td></td>
+                            <td>
+                                <p><mark style="background-color: #ec0000; color: black;"><span>In trip</mark></span>
+                                </p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tata Marco</td>
+                            <td></td>
+                            <td>
+                                <p><mark style="background-color: #eb0000; color: black;"><span>In trip</mark></span>
+                                </p>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button id="nextBtn" class="add-box-btn1">Next</button><button
+                                    class="add-box-btn">1</button><button id="previousBtn"
+                                    class="add-box-btn1">Previous</button>
+                                <script>const previousBtn = document.getElementById("previousBtn");
+                                    const nextBtn = document.getElementById("nextBtn");
+
+                                    previousBtn.addEventListener("click", () => {
+                                        window.history.back();
+                                    });
+
+                                    nextBtn.addEventListener("click", () => {
+                                        window.history.forward();
+                                    });</script>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
